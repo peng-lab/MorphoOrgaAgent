@@ -1,0 +1,78 @@
+{
+  "Area": {
+    "clear": {
+      "Identify the specific organoid with the maximum outer area in this field of view, and report both its total cross-sectional surface area in pixels and its geometric center coordinates x and y.": [
+        "Area_outer",
+        "x",
+        "y"
+      ],
+      "Perform a stratification of this sample into small, medium, and large tiers based on individual outer area distributions. Provide the mean outer area value calculated for each of the three tiers.": [
+        "Area_outer"
+      ]
+    },
+    "open": {
+      "Locate the most dominant organoid in this image and evaluate how much footprint it occupies in pixel coordinates, alongside its center of mass.": [
+        "Area_outer",
+        "x",
+        "y"
+      ],
+      "Quantify the size heterogeneity of this culture by partitioning all organoids into three tiers. What is the mean surface area for each of the three tiers—small, medium, and large?": [
+        "Area_outer"
+      ]
+    }
+  },
+  "Perimeter": {
+    "clear": {
+      "Identify the specific organoid with the maximum outer perimeter in this field of view, and report its total boundary length in pixels.": [
+        "Perimeter_outer"
+      ],
+      "Stratify this entire population into three distinct tiers using outer perimeter limits. Compute the mean outer perimeter value for each of the three tiers.": [
+        "Perimeter_outer"
+      ]
+    },
+    "open": {
+      "Identify the single organoid that possesses the longest external boundary line and report its total boundary length in pixels.": [
+        "Perimeter_outer"
+      ],
+      "If we split this entire population into three tier levels based on the length of their edges, what is the mean perimeter value for each of the three tiers?": [
+        "Perimeter_outer"
+      ]
+    }
+  },
+  "Roundness": {
+    "clear": {
+      "Find the single organoid that records the absolute maximum score for roundness in this imaging frame, and report its circularity index value": [
+        "roundness"
+      ],
+      "Stratify the organoid population into three circularity tiers based on its roundness score. Provide the average roundness value for each of the three tiers.": [
+        "roundness"
+      ]
+    },
+    "open": {
+      "Scan the image and pinpoint the single most symmetrical, spherical organoid in this batch. What is its exact circularity score?": [
+        "roundness"
+      ],
+      "Perform a quality control triage by dividing all organoids into three structural shape classes—spherical, intermediate, and irregular. Give me the average circularity for each of the three classes.": [
+        "roundness"
+      ]
+    }
+  },
+  "Roughness": {
+    "clear": {
+      "Locate the organoid showing the maximum baseline perimeter difference relative to its calculated ideal perimeter. Output its raw boundary excess value in pixels.": [
+        "perimeter_diff"
+      ],
+      "Bin all organoids into three classes according to their perimeter difference variance. Provide the mean perimeter difference value for each of the three classes—low, medium, and high deviation groups.": [
+        "perimeter_diff"
+      ]
+    },
+    "open": {
+      "Target the anomalous organoid that deviates the most from a smooth track—possessing the highest morphological roughness—and report its exact boundary line excess in pixels.": [
+        "perimeter_diff"
+      ],
+      "Classify this population into three tiers ranging from uniform to highly folded margins. What is the average roughness metric for each of the three tiers?": [
+        "perimeter_diff"
+      ]
+    }
+  }
+}
